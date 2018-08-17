@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %}Lab{% endblock %}
+
+{% block content %}
+	<div class="container">
+
+
+	<form>
+	<div class="row">
+		<div class="col-4"><img src="https://i.imgur.com/mzZAxYi.png" class="lab-img"></div>
+		<div class="col-8">
+		  <div class="form-group">
+		    <label for="labName">Nome</label>
+		    <input class="form-control" type="text" placeholder="Nome do Laboratório">
+		  </div>
+		  <div class="form-group">
+		    <label for="labAdm">Administrador</label>
+		    <input class="form-control" type="text" placeholder="Administrador do Laboratório">
+		  </div>
+	  	  <div class="form-group">
+		    <label for="exampleFormControlSelect1">Áreas de pesquisa</label>
+		    <select class="form-control" id="exampleFormControlSelect1">
+		      <option>Computação Quantica</option>
+		      <option>Redes Neurais</option>
+		      <option>Blockchain</option>
+		      <option>Teoria dos Grupos de Galois</option>
+		      <option>Eliminação Gaussiana</option>
+		    </select>
+		  </div>
+		</div>
+	</div>
+	<!-- fim row-->
+	<div class="form-group mt-3">
+		<label for="endereco">Endereço</label>
+		<div class="row">
+			<div class="col-5"><input class="form-control" type="text" placeholder="Rua"></div>
+			<div class="col-5"><input class="form-control" type="text" placeholder="Bairro"></div>
+			<div class="col-2"><input class="form-control" type="text" placeholder="Número"></div>
+		</div>
+	</div>
+	<!-- fim row-->
+	<div class="row">
+		<div class="col-4">
+	  	  <div class="form-group">
+		    <label for="exampleFormControlSelect1">Estados</label>
+		    <select class="form-control" id="exampleFormControlSelect1">
+		      <option>Amazonas</option>
+		      <option>Pará</option>
+		      <option>Roraima</option>
+		      <option>Minas Gerais</option>
+		      <option>Tocantins</option>
+		    </select>
+		  </div>
+		</div>
+		<div class="col-4">
+	  	  <div class="form-group">
+		    <label for="exampleFormControlSelect1">Cidades</label>
+		    <select class="form-control" id="exampleFormControlSelect1">
+		      <option>Manaus</option>
+		      <option>Belém</option>
+		      <option>Belo Horizonte</option>
+		      <option>Catanhal</option>
+		      <option>Palmas</option>
+		    </select>
+		  </div>
+		</div>
+		<div class="col-4">
+			<div class="form-group">
+				<label for="labTelefone">Telefone</label>
+				<input type="phone" class="form-control" placeholder="Telefone">
+			</div>
+		</div>
+	</div>
+	<!--fim row-->
+	</form>
+	<div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle dropdownMembros" type="button" id="dropdownMembros" data-toggle="dropdown" aria-haspopup="true">Pesquisadores</button>
+		<div class="dropdown-menu dropdownMembros" aria-labelledby="dropdownMembros">
+			<a class="dropdown-item" href="#">Pesquisador Fulano de Tal</a>
+			<a class="dropdown-item" href="#">Outro Pesquisador Exemplo</a>
+			<a class="dropdown-item" href="#">Mais um Exemplo de Pesquisador</a>
+			<a class="dropdown-item" href="#">Opa da Silva Pereira Junior</a>
+			<a class="dropdown-item" href="#">Exemplo Shumaquer da Cunha</a>
+			<a class="dropdown-item text-center bg-primary plus2 text-white" href="#">+</a>
+		</div>
+	</div>
+	</div>
+{% endblock %}
